@@ -1,24 +1,33 @@
 body {
-    background-color: #C0DFF0 ;
+    background-color: var(--bg-color) ;
+    color: var(--font-color);
 }
+
+section.page {
+    display: flex;
+    margin: auto;
+}
+
 div.centerpanel {
     display: flex;
     flex-direction: column;
     background-color: white;
     opacity: 0.8;
     width: 450px;
-    height: 600px;
-    margin: auto;
-    margin-top: 100px;
+    height: 575px;
     font-size: 20px;
     font-family: Roboto;
     border-radius: 12px;
     border: 0;
     filter: drop-shadow( 0px 4px 10px #2b2b2ba6);
-}
 
-div.centerpanel a {
-    color: black;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
 }
 
 div.logos {
@@ -62,10 +71,10 @@ div.inputelement + div.inputelement {
 button.login {
     width: 100%;
     height: 49px;
-    color: #848BBD;
+
     border-radius: 15px;
     background-color: #848BBD;
-    color: white;
+    color: var(--font-color-sp);
     font-weight: bold;
     font-size: 25px;
 }
@@ -84,4 +93,8 @@ div.forgot {
     font-size: 15px;
     margin-top: 9px;
     margin-bottom: 23px;
+}
+
+a {
+    color: var(--font-color);
 }

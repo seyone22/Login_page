@@ -3,32 +3,36 @@
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="style_lm.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)" />
 </head>
 
-<body>
-    <div class="centerpanel">
-        <div class="logos"><img src="logo.png"><br> <i>Abandon all hope, ye who enter here</i></div>
-        <div class="userForm">
-            <form method="POST" action="action.php">
-                <div class="inputelement">
-                    <label>Username</label><br>
-                    <input type="text"><br>
-                </div>
-                <div class="inputelement">
-                    <label>Password</label><br>
-                    <input type="password"><br>
-                </div>
+<body class="day night">
+    <section class="page center">
+        <div class="centerpanel">
+            <div class="logos"><img src="logo.png" style="width: 92px; height: 92px;"><br> <i>Abandon all hope, ye who enter here</i></div>
+            <div class="userForm">
+                <form method="POST" action="#">
+                    <div class="inputelement">
+                        <label>Username</label><br>
+                        <input type="text"><br>
+                    </div>
+                    <div class="inputelement">
+                        <label>Password</label><br>
+                        <input type="password"><br>
+                    </div>
                     <button class="login">Login</button>
 
-            </form>
-            <div class="actiontext">
-                <div class="forgot">
-                <a href="userreset.php" class="forgot">Forgot password? Click here</a><br>
+                </form>
+                <div class="actiontext">
+                    <div class="forgot">
+                        <a href="#" class="forgot">Forgot password? Click here</a><br>
+                    </div>
+                    <a href="#" class="create">No account? Create one!</a>
                 </div>
-                <a href="usercreate.php" class="create">No account? Create one!</a>
             </div>
-        </div>
+    </section>
     </div>
 </body>
 
