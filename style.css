@@ -73,6 +73,7 @@ button.login {
     height: 49px;
 
     border-radius: 15px;
+    border: 0px;
     background-color: #848BBD;
     color: var(--font-color-sp);
     font-weight: bold;
