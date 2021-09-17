@@ -1,17 +1,37 @@
 body {
     background-color: var(--bg-color) ;
-    color: var(--font-color);
+
+    margin: 0;
 }
+
+.background {
+ 
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    background-image: url("sunset.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
 
 section.page {
     display: flex;
     margin: auto;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 div.centerpanel {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--bg-color);
+    color: var(--font-color-sp);
     opacity: 0.8;
     width: 450px;
     height: 575px;
@@ -21,11 +41,6 @@ div.centerpanel {
     border: 0;
     filter: drop-shadow( 0px 4px 10px #2b2b2ba6);
 
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     
     margin: auto;
 }
@@ -57,10 +72,12 @@ input {
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: black, 1px;
+    border-color:black;
     margin: 8px 0px;
     font-size: 18px;
     font-weight: lighter;
+    background-color:rgba(0, 0, 0, 0);
+    color: var(--font-color-sp);
 
 }
 
@@ -94,8 +111,9 @@ div.forgot {
     font-size: 15px;
     margin-top: 9px;
     margin-bottom: 23px;
+    color: var(--font-color-sp);
 }
 
 a {
-    color: var(--font-color);
+    color: var(--font-color-sp);
 }
